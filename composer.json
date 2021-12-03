@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "description": "project brain games",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vqck",
+            "email": "toridnc@gmail.com"
+        }
+    ],
+    "require": {}
+}
