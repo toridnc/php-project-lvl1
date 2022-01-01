@@ -16,7 +16,7 @@ use function cli\line;
 use function cli\prompt;
 
 /**
- * Welcome function greets and asks for a name
+ * Greets and asks for a name.
  * 
  * @return string 'Hello, {$name}!'
  */
