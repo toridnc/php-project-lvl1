@@ -7,8 +7,12 @@ brain-games:
 brain-even:
 	./bin/brain-even
 
-validate:
+brain-calc:
+	./bin/brain-calc
+
+composer:
 	composer validate
+	composer dump-autoload
 
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
