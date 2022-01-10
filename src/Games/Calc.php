@@ -35,17 +35,17 @@ function calc()
         $operations = ['+', '-', '*'];
         shuffle($operations);
         $operation = $operations[$i];
-        $question = '{$num1} {$operation} {$num2}';
+        $question = "{$num1} {$operation} {$num2}";
         
         switch ($operation) {
         case '+':
-            $correctAnswers[$i] = $num1 + $num2;
+            $correctAnswers[$i] = strval($num1 + $num2);
             break;
         case '-':
-            $correctAnswers[$i] = $num1 - $num2;
+            $correctAnswers[$i] = strval($num1 - $num2);
             break;
         case '*':
-            $correctAnswers[$i] = $num1 * $num2;
+            $correctAnswers[$i] = strval($num1 * $num2);
             break;
         default:
             break;
