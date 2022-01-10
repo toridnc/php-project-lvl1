@@ -50,7 +50,8 @@ function engine(string $description, array $questions, array $correctAnswers)
         if ($answer === $correctAnswers[$i]) {
             line('Correct!');
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswers[$i]}'.");
+            line("'{$answer}' is wrong answer ;(.");
+            line("Correct answer was '{$correctAnswers[$i]}'.");
             line("Let's try again, {$name}!");
             return false;
         }

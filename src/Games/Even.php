@@ -19,6 +19,8 @@ use function Brain\Games\Engine\engine;
  * The user is shown a random number.
  * 'Yes' if the number is even, 'no' if it is odd.
  * 
+ * Only 3 rounds.
+ * 
  * @return string
  */
 function even()
@@ -32,12 +34,11 @@ function even()
     for ($i = 0; $i < $rounds; $i++) {
         $question = rand(0, 100);
         if ($question % 2 === 0) {
-            $correctAnswer = 'yes';
+            $correctAnswers[$i] = 'yes';
         } else {
-            $correctAnswer = 'no';
+            $correctAnswers[$i] = 'no';
         }
         $questions[$i] = $question;
-        $correctAnswers[$i] = $correctAnswer;
     }
 
     engine($description, $questions, $correctAnswers);

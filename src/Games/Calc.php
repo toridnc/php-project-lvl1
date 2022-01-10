@@ -15,7 +15,7 @@ namespace Src\Games\Calc;
 use function Brain\Games\Engine\engine;
 
 /**
- * A random mthematic expression is given: addition, subtraction or multiplication.
+ * A random mathematic expression is given: addition, subtraction or multiplication.
  * Need to calculate and write the correct answer.
  * Operations, like numbers, are randomly selected.
  * 
@@ -28,10 +28,31 @@ function calc()
     $questions = [];
     $correctAnswers = [];
 
+    $rounds = 3;
+    for ($i = 0; $i < $rounds; $i++) {
+        $num1 = rand(0, 10);
+        $num2 = rand(0, 10);
+        $operations = ['+', '-', '*'];
+        shuffle($operations);
+        $operation = $operations[$i];
+        $question = '{$num1} {$operation} {$num2}';
+        
+        switch ($operation) {
+        case '+':
+            $correctAnswers[$i] = $num1 + $num2;
+            break;
+        case '-':
+            $correctAnswers[$i] = $num1 - $num2;
+            break;
+        case '*':
+            $correctAnswers[$i] = $num1 * $num2;
+            break;
+        default:
+            break;
+        }
 
-
-    $questions[$i] = $question;
-    $correctAnswers[$i] = $correctAnswer;
+        $questions[$i] = $question;
+    }
 
     engine($description, $questions, $correctAnswers);
 }
