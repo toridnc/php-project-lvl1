@@ -1,17 +1,17 @@
 #!/usr/bin/env php
 <?php
 /**
- * Brain-Calc File Doc Comment
+ * Brain-GCD File Doc Comment
  *
  * PHP version 7.4
  *
  * @category BrainGames
- * @package  Calculator
+ * @package  GCD
  * @author   toridnc <toridnc@gmail.com>
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @link     https://github.com/toridnc/php-project-lvl1/tree/main
  */
-use Src\Games\Calc;
+use Src\Games\GCD;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -21,4 +21,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-Calc\calc();
+GCD\gcd();

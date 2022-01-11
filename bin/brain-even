@@ -1,6 +1,16 @@
 #!/usr/bin/env php
 <?php
-
+/**
+ * Brain-Even File Doc Comment
+ *
+ * PHP version 7.4
+ *
+ * @category BrainGames
+ * @package  Even
+ * @author   toridnc <toridnc@gmail.com>
+ * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @link     https://github.com/toridnc/php-project-lvl1/tree/main
+ */
 use Src\Games\Even;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
