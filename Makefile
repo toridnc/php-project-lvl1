@@ -10,7 +10,7 @@ brain-even:
 brain-calc:
 	./bin/brain-calc
 
-brain-gcd;
+brain-gcd:
 	./bin/brain-gcd
 
 composer:
