@@ -22,7 +22,7 @@ use function Brain\Games\Engine\engine;
  * 
  * @return int
  */
-function gcd(int $a, int $b)
+function gcd($a, $b)
 {
     if ($b === 0) {
         return $a;
