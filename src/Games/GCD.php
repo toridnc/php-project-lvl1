@@ -24,14 +24,11 @@ use function Brain\Games\Engine\engine;
  */
 function gcd($a, $b)
 {
-    if ($b === 0) {
-        return $a;
-    }
-    return gcd($b, $a % $b);
+    return $b ? gcd($b, $a % $b) : $a;
 }
 
     /**
-     * Bla-bla
+     * Bla-blaSash
      * 
      * Only 3 rounds.
      * 
@@ -46,11 +43,11 @@ function runGcd()
 
     $rounds = 3;
     for ($i = 0; $i < $rounds; $i++) {
-        $num1 = rand(0, 50);
-        $num2 = rand(0, 50);
+        $num1 = rand(0, 10);
+        $num2 = rand(0, 10);
         $question = "{$num1} {$num2}";
         $questions[$i] = $question;
-        $correctAnswers[$i] = gcd($num1, $num2);
+        $correctAnswers[$i] = (string) gcd($num1, $num2);
     }
 
     engine($description, $questions, $correctAnswers);
