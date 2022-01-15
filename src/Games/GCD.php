@@ -13,6 +13,8 @@
 namespace Src\Games\GCD;
 
 use function Brain\Games\Engine\engine;
+use function gmp\gmp_gcd;
+use function gmp\gmp_strval;
 
 /**
  * Bla-bla
