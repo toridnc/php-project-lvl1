@@ -22,7 +22,7 @@ use function Brain\Games\Engine\engine;
  * 
  * @return int
  */
-function gcd($a, $b) : int
+function gcd($a, $b)
 {
     if ($b === 0) {
         return $a;
@@ -50,7 +50,7 @@ function runGcd()
         $num2 = rand(0, 50);
         $question = "{$num1} {$num2}";
         $questions[$i] = $question;
-        $correctAnswers[$i] = (string) gcd($num1, $num2);
+        $correctAnswers[$i] = gcd($num1, $num2);
     }
 
     engine($description, $questions, $correctAnswers);
