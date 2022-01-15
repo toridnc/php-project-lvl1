@@ -32,15 +32,8 @@ function gcd()
     for ($i = 0; $i < $rounds; $i++) {
         $num1 = rand(0, 50);
         $num2 = rand(0, 50);
-        while ($num1 > 0 && $num2 > 0) {
-            if ($num1 > $num2) {
-                $num1 %= $num2;
-            } else {
-                $num2 %= $num1;
-            }
-        }
-        return $num1 + $num2;
-
+        $gcd = gmp_gcd($num1, $num2);
+        $correctAnswers[$i] = gmp_strval($gcd);
         $questions[$i] = $question;
     }
 

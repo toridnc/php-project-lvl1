@@ -27,7 +27,8 @@
         }
     ],
     "require": {
-        "wp-cli/php-cli-tools": "^0.11.13"
+        "wp-cli/php-cli-tools": "^0.11.13",
+        "simplito/bigint-wrapper-php": "^1.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"
