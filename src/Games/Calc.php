@@ -50,7 +50,6 @@ function calc()
         default:
             break;
         }
-
         $questions[$i] = $question;
     }
 

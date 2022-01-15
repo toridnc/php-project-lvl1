@@ -23,5 +23,19 @@ use function Brain\Games\Engine\engine;
  */
 function gcd()
 {
-    
+    $description = 'Find the greatest common divisor of given numbers.';
+
+    $questions = [];
+    $correctAnswers = [];
+
+    $rounds = 3;
+    for ($i = 0; $i < $rounds; $i++) {
+        $num1 = rand(0, 50);
+        $num2 = rand(0, 50);
+        $gcd = gmp_gcd($num1, $num2);
+        $correctAnswers[$i] = gmp_strval($gcd);
+        $questions[$i] = $question;
+    }
+
+    engine($description, $questions, $correctAnswers);
 }
