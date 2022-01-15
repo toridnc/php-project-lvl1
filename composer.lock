@@ -4,46 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a350d56c934e4d58d7537aba5749237",
+    "content-hash": "d77fb08efbbc443005d7dc22c05a165f",
     "packages": [
-        {
-            "name": "simplito/bigint-wrapper-php",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/simplito/bigint-wrapper-php.git",
-                "reference": "cf21ec76d33f103add487b3eadbd9f5033a25930"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/simplito/bigint-wrapper-php/zipball/cf21ec76d33f103add487b3eadbd9f5033a25930",
-                "reference": "cf21ec76d33f103add487b3eadbd9f5033a25930",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "BI\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Simplito Team",
-                    "email": "s.smyczynski@simplito.com",
-                    "homepage": "https://simplito.com"
-                }
-            ],
-            "description": "Common interface for php_gmp and php_bcmath modules",
-            "support": {
-                "issues": "https://github.com/simplito/bigint-wrapper-php/issues",
-                "source": "https://github.com/simplito/bigint-wrapper-php/tree/1.0.0"
-            },
-            "time": "2018-02-27T12:38:08+00:00"
-        },
         {
             "name": "wp-cli/php-cli-tools",
             "version": "v0.11.13",

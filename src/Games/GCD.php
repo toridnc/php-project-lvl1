@@ -13,17 +13,31 @@
 namespace Src\Games\GCD;
 
 use function Brain\Games\Engine\engine;
-use function gmp\gmp_gcd;
-use function gmp\gmp_strval;
 
 /**
  * Bla-bla
+ *
+ * @param integer $a 1 number
+ * @param integer $b 2 number
  * 
- * Only 3 rounds.
- * 
- * @return string
+ * @return int
  */
-function gcd()
+function gcd(int $a, int $b)
+{
+    if ($b === 0) {
+        return $a;
+    }
+    return gcd($b, $a % $b);
+}
+
+    /**
+     * Bla-bla
+     * 
+     * Only 3 rounds.
+     * 
+     * @return string
+     */
+function runGcd()
 {
     $description = 'Find the greatest common divisor of given numbers.';
 
@@ -34,9 +48,9 @@ function gcd()
     for ($i = 0; $i < $rounds; $i++) {
         $num1 = rand(0, 50);
         $num2 = rand(0, 50);
-        $gcd = gmp_gcd($num1, $num2);
-        $correctAnswers[$i] = gmp_strval($gcd);
+        $question = "{$num1} {$num2}";
         $questions[$i] = $question;
+        $correctAnswers[$i] = gcd($num1, $num2);
     }
 
     engine($description, $questions, $correctAnswers);

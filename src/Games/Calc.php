@@ -36,6 +36,7 @@ function calc()
         shuffle($operations);
         $operation = $operations[$i];
         $question = "{$num1} {$operation} {$num2}";
+        $questions[$i] = $question;
         
         switch ($operation) {
         case '+':
@@ -50,7 +51,6 @@ function calc()
         default:
             break;
         }
-        $questions[$i] = $question;
     }
 
     engine($description, $questions, $correctAnswers);
