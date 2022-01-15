@@ -22,7 +22,7 @@ use function Brain\Games\Engine\engine;
  * 
  * @return int
  */
-function gcd($a, $b)
+function gcd(int $a, int $b)
 {
     return $b ? gcd($b, $a % $b) : $a;
 }
