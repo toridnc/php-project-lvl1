@@ -15,7 +15,10 @@ namespace Src\Games\GCD;
 use function Brain\Games\Engine\engine;
 
 /**
- * Bla-bla
+ * Showing two random numbers.
+ * Need to calculate and write the greatest common divisor of these numbers.
+ * 
+ * Only 3 rounds.
  *
  * @param integer $a 1 number
  * @param integer $b 2 number
