@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Progression File Doc Comment
  *
@@ -10,6 +11,7 @@
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @link     https://github.com/toridnc/php-project-lvl1/tree/main
  */
+
 namespace Src\Games\Progression;
 
 use function Brain\Games\Engine\engine;
@@ -17,9 +19,9 @@ use function Brain\Games\Engine\engine;
 /**
  * Shows a series of numbers - arithmetic progression.
  * Need to write the missing number.
- * 
+ *
  * Only 3 rounds.
- * 
+ *
  * @return string
  */
 function progression()
@@ -48,5 +50,4 @@ function progression()
     }
 
     engine($description, $questions, $correctAnswers);
-
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * GCD File Doc Comment
  *
@@ -10,6 +11,7 @@
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @link     https://github.com/toridnc/php-project-lvl1/tree/main
  */
+
 namespace Src\Games\GCD;
 
 use function Brain\Games\Engine\engine;
@@ -17,12 +19,12 @@ use function Brain\Games\Engine\engine;
 /**
  * Showing two random numbers.
  * Need to calculate and write the greatest common divisor of these numbers.
- * 
+ *
  * Only 3 rounds.
  *
  * @param integer $a 1 number
  * @param integer $b 2 number
- * 
+ *
  * @return int
  */
 function gcd(int $a, int $b)
@@ -30,13 +32,13 @@ function gcd(int $a, int $b)
     return $b ? gcd($b, $a % $b) : $a;
 }
 
-    /**
-     * Run GCD games.
-     * 
-     * Only 3 rounds.
-     * 
-     * @return string
-     */
+/**
+ * Run GCD games.
+ *
+ * Only 3 rounds.
+ *
+ * @return string
+ */
 function runGcd()
 {
     $description = 'Find the greatest common divisor of given numbers.';

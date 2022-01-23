@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Calc File Doc Comment
  *
@@ -10,6 +11,7 @@
  * @license  http://www.php.net/license/3_01.txt  PHP License 3.01
  * @link     https://github.com/toridnc/php-project-lvl1/tree/main
  */
+
 namespace Src\Games\Calc;
 
 use function Brain\Games\Engine\engine;
@@ -18,7 +20,7 @@ use function Brain\Games\Engine\engine;
  * A random mathematic expression is given: addition, subtraction or multiplication.
  * Need to calculate and write the correct answer.
  * Operations, like numbers, are randomly selected.
- * 
+ *
  * @return string
  */
 function calc()
@@ -37,7 +39,7 @@ function calc()
         $operation = $operations[$i];
         $question = "{$num1} {$operation} {$num2}";
         $questions[$i] = $question;
-        
+
         switch ($operation) {
         case '+':
             $correctAnswers[$i] = strval($num1 + $num2);
