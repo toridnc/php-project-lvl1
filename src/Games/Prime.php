@@ -33,7 +33,7 @@ function isPrime()
     $rounds = 3;
     for ($i = 0; $i < $rounds; $i++) {
         $question = rand(0, 100);
-        if ($question > 1 && $question / $question === 1 && $question / 1 === 1) {
+        if ($question > 1 && ($question / $question === 1)) {
             $correctAnswers[$i] = 'yes';
         } else {
             $correctAnswers[$i] = 'no';
