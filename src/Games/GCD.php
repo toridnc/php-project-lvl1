@@ -31,7 +31,7 @@ function gcd(int $a, int $b)
 }
 
     /**
-     * Bla-blaSash
+     * Run GCD games.
      * 
      * Only 3 rounds.
      * 

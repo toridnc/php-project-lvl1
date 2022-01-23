@@ -20,10 +20,34 @@ use function Brain\Games\Engine\engine;
  * 'Yes' if the number is prime, 'no' if it's not.
  * 
  * Only 3 rounds.
+ * 
+ * @param $num is a random number
  *
- * @return string
+ * @return bool
  */
-function isPrime()
+function isPrime($num)
+{
+    if ($num < 2) {
+        return false;
+    } 
+
+    for ($check = 2; $check <= sqrt($num); $check++) {
+        if ($num % $check === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+    /**
+     * Run Prime games.
+     * 
+     * Only 3 rounds.
+     * 
+     * @return string
+     */
+function runPrime()
 {
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     
@@ -32,15 +56,9 @@ function isPrime()
 
     $rounds = 3;
     for ($i = 0; $i < $rounds; $i++) {
-        $question = rand(0, 100);
-        if ($question <= 1 || $question % 2 === 0) {
-            $correctAnswers[$i] = 'no';
-        } elseif ($question === 2) {
-            $correctAnswers[$i] = 'yes';
-        } else {
-            $correctAnswers[$i] = 'yes';
-        }
-        $questions[$i] = $question;
+        $num = rand(0, 100);
+        $questions[$i] = (string) $num;
+        $correctAnswers[$i] = isPrime($num) ? 'yes' : 'no';
     }
 
     engine($description, $questions, $correctAnswers);
