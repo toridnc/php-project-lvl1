@@ -24,7 +24,10 @@ use function Brain\Games\Engine\engine;
  */
 function gcd(int $a, int $b)
 {
-    return $b ? gcd($b, $a % $b) : $a;
+    if ($b === 0) {
+        return $a;
+    }
+    return gcd($b, $a % $b);
 }
 
 /**

@@ -23,14 +23,14 @@ use function Brain\Games\Engine\engine;
  *
  * Only 3 rounds.
  */
-function isPrime(int $num)
+function isPrime(int $a)
 {
-    if ($num < 2) {
+    if ($a < 2) {
         return false;
     }
 
-    for ($check = 2; $check <= sqrt($num); $check++) {
-        if ($num % $check === 0) {
+    for ($check = 2; $check <= sqrt($a); $check++) {
+        if ($a % $check === 0) {
             return false;
         }
     }
