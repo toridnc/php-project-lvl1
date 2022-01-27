@@ -23,7 +23,7 @@ use function Brain\Games\Engine\engine;
  *
  * Only 3 rounds.
  */
-function isPrime($num)
+function isPrime()
 {
     if ($num < 2) {
         return false;

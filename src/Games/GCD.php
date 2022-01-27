@@ -31,8 +31,6 @@ function gcd(int $a, int $b)
  * Run GCD games.
  *
  * Only 3 rounds.
- *
- * @return string
  */
 function runGcd()
 {
