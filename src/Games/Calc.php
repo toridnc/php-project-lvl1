@@ -41,17 +41,17 @@ function calc() : void
         $questions[$i] = $question;
 
         switch ($operation) {
-        case '+':
-            $correctAnswers[$i] = strval($num1 + $num2);
-            break;
-        case '-':
-            $correctAnswers[$i] = strval($num1 - $num2);
-            break;
-        case '*':
-            $correctAnswers[$i] = strval($num1 * $num2);
-            break;
-        default:
-            break;
+            case '+':
+                $correctAnswers[$i] = strval($num1 + $num2);
+                break;
+            case '-':
+                $correctAnswers[$i] = strval($num1 - $num2);
+                break;
+            case '*':
+                $correctAnswers[$i] = strval($num1 * $num2);
+                break;
+            default:
+                break;
         }
     }
 
