@@ -11,6 +11,6 @@ jobs:
     steps:
 
       - name: Install
-        run: make install
+        run: composer install
       - name: Run linter
         run: make lint
