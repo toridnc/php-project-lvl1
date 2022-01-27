@@ -22,7 +22,7 @@ use function cli\prompt;
  *
  * @return string 'Hello, {$name}!'
  */
-function welcome()
+function welcome() : void
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');

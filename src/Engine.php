@@ -32,7 +32,7 @@ use function cli\prompt;
  *
  * @param string $description    Description of the game
  * @param array  $questions      Random question of the game
- * @param string $correctAnswers Correct answer
+ * @param array  $correctAnswers Correct answer
  *
  * @return string
  */

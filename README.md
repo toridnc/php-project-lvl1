@@ -13,24 +13,32 @@ composer global require corsicanec82/brain-games
 brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/463542.svg)](https://asciinema.org/a/463542)
+[![asciicast](https://asciinema.org/a/464796.svg)](https://asciinema.org/a/464796)
 
 ## Game: "Calculator"
 ```sh
 brain-calc
 ```
 
+[![asciicast](https://asciinema.org/a/464797.svg)](https://asciinema.org/a/464797)
+
 ## Game: "Greatest common divisor"
 ```sh
 brain-gcd
 ```
+
+[![asciicast](https://asciinema.org/a/464798.svg)](https://asciinema.org/a/464798)
 
 ## Game: "Arithmetic progression"
 ```sh
 brain-progression
 ```
 
+[![asciicast](https://asciinema.org/a/464801.svg)](https://asciinema.org/a/464801)
+
 ## Game: "Prime number"
 ```sh
 brain-prime
 ```
+
+[![asciicast](https://asciinema.org/a/464802.svg)](https://asciinema.org/a/464802)
