@@ -11,4 +11,4 @@ jobs:
     steps:
 
       - name: Run linter
-        run: make lint
+        run: composer exec --verbose phpcs -- --standard=PSR12 src bin
