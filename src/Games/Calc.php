@@ -23,7 +23,7 @@ use function Brain\Games\Engine\engine;
  *
  * @return string
  */
-function calc() : void
+function calc(): void
 {
     $description = 'What is the result of the expression?';
 
