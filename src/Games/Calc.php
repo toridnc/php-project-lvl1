@@ -20,10 +20,8 @@ use function Brain\Games\Engine\engine;
  * A random mathematic expression is given: addition, subtraction or multiplication.
  * Need to calculate and write the correct answer.
  * Operations, like numbers, are randomly selected.
- *
- * @return string
  */
-function calc(): void
+function calc()
 {
     $description = 'What is the result of the expression?';
 

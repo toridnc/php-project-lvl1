@@ -21,8 +21,6 @@ use function Brain\Games\Engine\engine;
  * Need to write the missing number.
  *
  * Only 3 rounds.
- *
- * @return string
  */
 function progression()
 {

@@ -22,8 +22,6 @@ use function Brain\Games\Engine\engine;
  * 'Yes' if the number is even, 'no' if it's odd.
  *
  * Only 3 rounds.
- *
- * @return string
  */
 function isEven()
 {

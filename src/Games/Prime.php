@@ -22,10 +22,6 @@ use function Brain\Games\Engine\engine;
  * 'Yes' if the number is prime, 'no' if it's not.
  *
  * Only 3 rounds.
- *
- * @param $num is a random number
- *
- * @return bool
  */
 function isPrime($num)
 {
@@ -42,13 +38,11 @@ function isPrime($num)
     return true;
 }
 
-    /**
-     * Run Prime games.
-     *
-     * Only 3 rounds.
-     *
-     * @return string
-     */
+/**
+ * Run Prime games.
+ *
+ * Only 3 rounds.
+*/
 function runPrime()
 {
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';

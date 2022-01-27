@@ -17,6 +17,9 @@ namespace Brain\Games\Cli;
 use function cli\line;
 use function cli\prompt;
 
+/**
+ * Greets and asks for a name.
+ */
 function welcome()
 {
     line('Welcome to the Brain Games!');

@@ -21,11 +21,6 @@ use function Brain\Games\Engine\engine;
  * Need to calculate and write the greatest common divisor of these numbers.
  *
  * Only 3 rounds.
- *
- * @param integer $a 1 number
- * @param integer $b 2 number
- *
- * @return int
  */
 function gcd(int $a, int $b)
 {
