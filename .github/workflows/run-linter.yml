@@ -10,5 +10,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - name: Run linter
-        run: composer install
+      - name: Install
+        run: make install
+      - name: Linter
+        run: make linter
