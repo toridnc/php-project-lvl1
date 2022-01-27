@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-
+      - uses: actions/checkout@v2
       - name: Run linter
-        run: ls -l
+        run: composer install
