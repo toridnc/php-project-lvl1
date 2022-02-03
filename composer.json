@@ -1,5 +1,13 @@
 {
-    "name": "hexlet/code",
+    "name": "toridnc/brain-games",
+    "description": "Project brain games",
+    "keywords": [
+    "project",
+    "brain",
+    "games"
+    ],
+    "homepage": "https://github.com/toridnc/php-project-lvl1",
+    "readme": "https://github.com/toridnc/php-project-lvl1#readme",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
@@ -8,7 +16,6 @@
         "bin/brain-progression",
         "bin/brain-prime"
     ],
-    "description": "project brain games",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -26,7 +33,7 @@
     },
     "authors": [
         {
-            "name": "vqck",
+            "name": "Victoria Smirnova",
             "email": "toridnc@gmail.com"
         }
     ],
