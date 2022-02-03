@@ -5,7 +5,7 @@
 
 ## Install
 ```sh
-composer global require corsicanec82/brain-games
+composer global require toridnc/brain-games
 ```
 
 ## Game: "Parity check"
