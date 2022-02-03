@@ -5,40 +5,46 @@
 
 ## Install
 ```sh
-composer global require toridnc/brain-games
+git clone https://github.com/toridnc/php-project-lvl1.git
+```
+```sh
+cd php-project-lvl1
+```
+```sh
+make install
 ```
 
 ## Game: "Parity check"
 ```sh
-brain-even
+make brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/464796.svg)](https://asciinema.org/a/464796)
 
 ## Game: "Calculator"
 ```sh
-brain-calc
+make brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/464797.svg)](https://asciinema.org/a/464797)
 
 ## Game: "Greatest common divisor"
 ```sh
-brain-gcd
+make brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/464798.svg)](https://asciinema.org/a/464798)
 
 ## Game: "Arithmetic progression"
 ```sh
-brain-progression
+make brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/464801.svg)](https://asciinema.org/a/464801)
 
 ## Game: "Prime number"
 ```sh
-brain-prime
+make brain-prime
 ```
 
 [![asciicast](https://asciinema.org/a/464802.svg)](https://asciinema.org/a/464802)
