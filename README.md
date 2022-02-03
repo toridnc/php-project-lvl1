@@ -19,7 +19,7 @@ make install
 make brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/464796.svg)](https://asciinema.org/a/464796)
+[![asciicast](https://asciinema.org/a/466384.svg)](https://asciinema.org/a/466384)
 
 ## Game: "Calculator"
 ```sh
