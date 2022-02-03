@@ -1,11 +1,6 @@
 {
-    "name": "toridnc/brain-games",
+    "name": "hexlet/code",
     "description": "Project brain games",
-    "keywords": [
-    "project",
-    "brain",
-    "games"
-    ],
     "homepage": "https://github.com/toridnc/php-project-lvl1",
     "readme": "https://github.com/toridnc/php-project-lvl1#readme",
     "bin": [
